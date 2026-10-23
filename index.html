@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Коммерческое предложение: Naman Mastery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--granite:#1a1918;--bone:#e6dfd3;--sand:#b9a68c;--slate:#7d7a74;
+--paper:#e6dfd3;--fg:#1a1918;--line:rgba(26,25,24,.4);--mut:#5d5a54;
+--h:'Unbounded','Arial Black',Arial,sans-serif;--m:'JetBrains Mono',ui-monospace,Menlo,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#262422;--fg:#e6dfd3;--line:rgba(230,223,211,.35);--mut:#a8a299}}
+:root[data-theme="dark"]{--paper:#262422;--fg:#e6dfd3;--line:rgba(230,223,211,.35);--mut:#a8a299}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--granite);color:var(--bone);font-family:var(--m);font-size:15px;line-height:1.65}
+.s{padding:clamp(56px,9vw,130px) clamp(20px,6vw,96px)}
+.lt{background:var(--paper);color:var(--fg)}
+.dk{background:var(--granite);color:var(--bone)}
+h2{font-family:var(--h);font-weight:600;font-size:clamp(24px,4.4vw,66px);line-height:1.08;letter-spacing:-.02em;margin-bottom:.7em;overflow-wrap:anywhere;max-width:18ch}
+p{max-width:62ch}
+.mut{color:var(--mut)}
+.dk .mut{color:var(--sand)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;align-items:center;overflow:hidden;background:var(--granite);color:var(--bone);padding:clamp(20px,3vw,40px)}
+.grain{position:absolute;inset:0;opacity:.5;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .75 0 0 0 0 .7 0 0 0 0 .62 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.beams{position:absolute;inset:-30%;background:repeating-linear-gradient(115deg,transparent 0 110px,rgba(185,166,140,.22) 110px 250px,transparent 250px 400px);filter:blur(22px);animation:sweep 16s ease-in-out infinite alternate}
+@keyframes sweep{from{transform:translate3d(-140px,0,0)}to{transform:translate3d(160px,0,0)}}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,transparent 30%,rgba(26,25,24,.85) 100%)}
+.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hv[src]~.vig{background:linear-gradient(rgba(26,25,24,.5),rgba(26,25,24,.72))}
+.hv[src]~.beams{opacity:.4}
+.hv[src]~.scene{display:none}
+.scene{position:absolute;right:7vw;top:50%;width:var(--s);height:var(--s);margin-top:calc(var(--s)/-2);--s:clamp(120px,22vw,300px);perspective:1100px;opacity:.75}
+.cube{position:absolute;inset:0;transform-style:preserve-3d;animation:spin 30s linear infinite}
+.f{position:absolute;inset:0;border:1px solid rgba(230,223,211,.5);background:linear-gradient(135deg,rgba(185,166,140,.14),rgba(26,25,24,.55))}
+.f:nth-child(1){transform:translateZ(calc(var(--s)/2))}
+.f:nth-child(2){transform:rotateY(180deg) translateZ(calc(var(--s)/2))}
+.f:nth-child(3){transform:rotateY(90deg) translateZ(calc(var(--s)/2))}
+.f:nth-child(4){transform:rotateY(-90deg) translateZ(calc(var(--s)/2))}
+.f:nth-child(5){transform:rotateX(90deg) translateZ(calc(var(--s)/2))}
+.f:nth-child(6){transform:rotateX(-90deg) translateZ(calc(var(--s)/2))}
+@keyframes spin{from{transform:rotateX(-24deg) rotateY(0)}to{transform:rotateX(-24deg) rotateY(360deg)}}
+.bar{position:relative;z-index:2;width:100%;display:flex;justify-content:space-between;font-size:.8em;color:var(--sand)}
+.logo{position:relative;z-index:2;width:min(560px,88vw);border:1px solid var(--bone);background:rgba(26,25,24,.35);text-align:center}
+.logo .a{padding:clamp(22px,4vw,52px) 16px;border-bottom:1px solid var(--bone);font-family:var(--h);font-size:clamp(26px,5.4vw,62px);letter-spacing:.1em;line-height:1}
+.logo .a span{display:block;font-family:var(--m);font-weight:400;font-size:.26em;letter-spacing:.55em;margin-top:1.1em}
+.logo .b{padding:clamp(18px,3vw,36px) 16px;font-family:var(--h);font-size:clamp(13px,2.1vw,24px);letter-spacing:.18em}
+.down{position:relative;z-index:2;color:var(--sand);font-size:.85em}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,5vw,80px);align-items:end}
+.intro h2{max-width:none;font-size:clamp(28px,6vw,92px)}
+.facts{border:1px solid var(--line)}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;border-top:1px solid var(--line)}
+.facts div:first-child{border-top:0}
+.facts b{font-weight:700;text-align:right}
+
+/* positioning */
+.pos .lead{font-size:1.1em;margin-bottom:clamp(24px,4vw,44px)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--sand)}
+@media(max-width:1024px){.grid{grid-template-columns:1fr}}
+.grid article{padding:clamp(18px,2vw,28px);border-left:1px solid var(--sand);border-top:1px solid var(--sand);margin:-1px 0 0 -1px}
+.grid h3{font-family:var(--h);font-weight:600;font-size:1.05em;line-height:1.2;margin-bottom:.6em}
+.grid p{font-size:.92em}
+.grid .dz{margin-top:.8em;padding-top:.8em;border-top:1px solid rgba(185,166,140,.5)}
+.grid .dz b{color:var(--sand);font-weight:700}
+.rule{margin-top:20px;border-left:2px solid var(--sand);padding-left:16px;max-width:80ch}
+.flow{margin-top:clamp(32px,5vw,60px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:12px clamp(16px,4vw,72px);align-items:start}
+.flow h3{grid-column:1/-1;font-family:var(--h);font-weight:600;font-size:clamp(15px,1.8vw,22px);margin-bottom:.2em}
+ol.blk,ul.feat{list-style:none}
+ol.blk{border-bottom:1px solid var(--sand)}
+ol.blk{counter-reset:b}
+ol.blk li{counter-increment:b;display:flex;gap:14px;padding:9px 0;border-top:1px solid var(--sand);font-size:.92em}
+ol.blk li::before{content:counter(b);font-family:var(--h);color:var(--sand);min-width:1.2em}
+ul.feat{display:flex;flex-wrap:wrap;gap:8px}
+ul.feat li{border:1px solid var(--sand);padding:6px 14px;font-size:.92em;color:var(--sand)}
+@media(max-width:420px){.flow{grid-template-columns:1fr}}
+
+/* estimate */
+.row{display:grid;grid-template-columns:1fr auto;gap:8px 28px;padding:16px 0;border-top:1px solid var(--line)}
+.row .sub{display:block;color:var(--mut);font-size:.88em;margin-top:.3em;max-width:70ch}
+.row .pr{white-space:nowrap;font-weight:700}
+.tot{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-top:2px solid var(--fg);padding-top:20px;margin-top:4px}
+.tot span:first-child{font-family:var(--h);font-size:clamp(18px,2.4vw,30px)}
+.tot span:last-child{font-family:var(--h);font-size:clamp(28px,5vw,68px);line-height:1.1}
+.notes{margin-top:28px;display:grid;gap:8px}
+.notes p{border-left:2px solid var(--fg);padding-left:14px}
+
+/* timeline */
+ol.tl{list-style:none;counter-reset:t;border-top:1px solid var(--sand)}
+ol.tl li{counter-increment:t;display:grid;grid-template-columns:auto 1fr auto;gap:6px clamp(14px,3vw,40px);padding:20px 0;border-bottom:1px solid var(--sand);align-items:baseline}
+ol.tl li::before{content:counter(t);font-family:var(--h);font-size:1.5em;color:var(--sand);min-width:1.4em}
+ol.tl b{font-family:var(--h);font-weight:600;font-size:1.05em;display:block;margin-bottom:.3em}
+ol.tl .d{font-weight:700;white-space:nowrap}
+.sum{margin-top:28px;border:1px solid var(--sand);padding:18px 22px;max-width:62ch}
+
+/* finish */
+.fin{min-height:70svh;display:flex;flex-direction:column;justify-content:space-between}
+.fin h2{font-size:clamp(34px,8vw,120px);max-width:none}
+
+@media(max-width:760px){.intro{grid-template-columns:1fr}.scene{right:-8vw;opacity:.45}ol.tl li{grid-template-columns:auto 1fr}ol.tl .d{grid-column:2}.row{grid-template-columns:1fr}.row .pr{order:-1}}
+@media(prefers-reduced-motion:reduce){.beams,.cube{animation:none}html{scroll-behavior:auto}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+/* editorial serif */
+:root{--h:'Cormorant Garamond','Times New Roman',Georgia,serif;--m:'Jost','Helvetica Neue',Arial,sans-serif}
+body{font-size:16px;font-weight:300;letter-spacing:.01em}
+h2{font-weight:500;font-size:clamp(36px,6.4vw,104px);line-height:.98;letter-spacing:-.015em;max-width:14ch}
+.intro h2{font-size:clamp(52px,9.5vw,160px)}
+.fin h2{font-size:clamp(52px,11vw,176px)}
+.logo .a{font-weight:500;letter-spacing:.24em;font-size:clamp(30px,6vw,72px)}
+.logo .a span{font-size:.24em;letter-spacing:.7em}
+.logo .b{font-weight:500;font-size:clamp(14px,2vw,22px);letter-spacing:.3em}
+.bar,.down{font-size:.85em;letter-spacing:.1em}
+.grid h3{font-weight:500;font-size:clamp(22px,2.2vw,32px);letter-spacing:0}
+.grid p{font-size:1em}
+.grid article>p:not(.dz){color:#9d958a}
+.flow h3,.tot span:first-child{font-weight:500;font-size:clamp(22px,2.4vw,34px)}
+.tot span:last-child{font-weight:500}
+ol.tl b{font-weight:500;font-size:1.5em}
+ol.tl li::before,ol.blk li::before{font-weight:500;font-size:1.4em}
+.row .pr{font-weight:400}
+/* logo-like geometric headings, granite palette */
+:root{--h:'Jost','Helvetica Neue',Arial,sans-serif;--m:'JetBrains Mono',ui-monospace,Menlo,monospace;--sand:#9c9c96;--price:#3f4b4c}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--price:#aab6b3}}
+:root[data-theme="dark"]{--price:#aab6b3}
+body{font-size:14.5px;font-weight:400;letter-spacing:0}
+h2,.flow h3,.grid h3,ol.tl b,.tot span:first-child{text-transform:uppercase;font-weight:400;letter-spacing:.08em}
+h2{font-size:clamp(26px,4.4vw,70px);line-height:1.12;max-width:20ch}
+.intro h2{font-size:clamp(30px,6.4vw,104px);letter-spacing:.12em}
+.fin h2{font-size:clamp(32px,8vw,128px);letter-spacing:.1em}
+.logo .a{font-weight:400;letter-spacing:.2em;font-size:clamp(28px,5.6vw,66px)}
+.logo .a span{font-weight:400;font-size:.26em;letter-spacing:.6em}
+.logo .b{font-weight:400;font-size:clamp(13px,1.9vw,22px);letter-spacing:.3em}
+.grid h3{font-size:clamp(16px,1.6vw,22px);line-height:1.3}
+.flow h3,.tot span:first-child{font-size:clamp(16px,1.8vw,24px)}
+ol.tl b{font-size:1.05em}
+ol.tl li::before,ol.blk li::before{font-weight:400;font-size:1.3em}
+.row .pr{font-weight:700;color:var(--price)}
+.tot span:last-child{color:var(--price);font-weight:400;font-size:clamp(28px,5vw,64px);letter-spacing:.04em}
+.grid article>p:not(.dz){color:#9b9a96}
+.grid .dz{border-top-color:rgba(156,156,150,.5)}
+.beams{background:repeating-linear-gradient(115deg,transparent 0 110px,rgba(160,160,154,.2) 110px 250px,transparent 250px 400px)}
+.f{background:linear-gradient(135deg,rgba(156,156,150,.14),rgba(26,25,24,.55))}
+/* reference: cool charcoal + pale grey-green, high-contrast serif caps, small sans */
+:root{--granite:#1b1b1c;--bone:#e9ece8;--sand:#8e908c;--paper:#e9ece8;--fg:#1b1b1c;--line:rgba(27,27,28,.3);--mut:#6c6f6b;--price:#44504c;--h:'Cormorant Garamond','Times New Roman',Georgia,serif;--m:'Montserrat','Helvetica Neue',Arial,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#262727;--fg:#e9ece8;--line:rgba(233,236,232,.3);--mut:#a5a8a4;--price:#b4bdb9}}
+:root[data-theme="dark"]{--paper:#262727;--fg:#e9ece8;--line:rgba(233,236,232,.3);--mut:#a5a8a4;--price:#b4bdb9}
+body{font-size:14px;font-weight:300;letter-spacing:.02em;line-height:1.7}
+h2,.flow h3,.grid h3,ol.tl b,.tot span:first-child{font-weight:400;letter-spacing:.03em;text-transform:uppercase}
+h2{font-size:clamp(30px,5vw,80px);line-height:1.05}
+.intro h2{font-size:clamp(40px,8vw,128px);letter-spacing:.04em}
+.fin h2{font-size:clamp(40px,9vw,140px);letter-spacing:.04em}
+.grid h3{font-size:clamp(20px,2vw,28px);line-height:1.15}
+.flow h3,.tot span:first-child{font-size:clamp(20px,2.2vw,30px)}
+ol.tl b{font-size:1.45em}
+ol.tl li::before,ol.blk li::before{font-weight:400;font-size:1.5em}
+.logo .a{font-family:'Montserrat',sans-serif;font-weight:400;letter-spacing:.24em;font-size:clamp(26px,5vw,58px)}
+.logo .a span{font-weight:400;font-size:.24em;letter-spacing:.6em}
+.logo .b{font-family:'Montserrat',sans-serif;font-weight:400;font-size:clamp(12px,1.7vw,19px);letter-spacing:.3em}
+.row .pr{font-weight:700;color:var(--price)}
+.tot span:last-child{color:var(--price);font-weight:400;font-size:clamp(34px,5.6vw,72px);letter-spacing:.02em}
+.grid article>p:not(.dz){color:#8e908c}
+.grid .dz{border-top-color:rgba(142,144,140,.5)}
+.beams{background:repeating-linear-gradient(115deg,transparent 0 110px,rgba(150,152,148,.2) 110px 250px,transparent 250px 400px)}
+.f{background:linear-gradient(135deg,rgba(142,144,140,.14),rgba(27,27,28,.55))}
+.contact{margin-top:clamp(32px,5vw,64px)}
+h1,h2,h3,.grid h3,.flow h3,ol.tl b,.tot span:first-child,.tot span:last-child,.logo .a,.logo .b{line-height:1.1}
+.logo .a{padding:clamp(26px,4vw,52px) 16px}
+.logo .a svg{display:block;width:min(78%,300px);height:auto;margin:0 auto;fill:none;stroke:var(--bone);stroke-width:6;stroke-linejoin:miter;stroke-linecap:butt}
+.logo .a span{display:block;margin-top:clamp(16px,2.2vw,26px);font-family:'Montserrat',sans-serif;font-weight:400;font-size:clamp(11px,1.5vw,17px);letter-spacing:.55em;padding-left:.55em;line-height:1.1}
+:root{padding-top:0}
+.hero{padding-top:calc(clamp(20px,3vw,40px) + env(safe-area-inset-top,0px))}
+.logo .a{font-family:var(--h);font-weight:500;letter-spacing:.24em;font-size:clamp(30px,6vw,72px);line-height:1.1;padding:clamp(22px,4vw,52px) 16px}
+.logo .a span{display:block;margin-top:1.1em;font-family:var(--h);font-weight:500;font-size:.26em;letter-spacing:.6em;padding-left:.6em;line-height:1.1}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <video class="hv" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="grain"></div><div class="beams"></div><div class="vig"></div>
+  <div class="scene" aria-hidden="true"><div class="cube"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></div></div>
+  <div class="bar"><span>art-maksimenko</span><span>2026</span></div>
+  <div class="logo">
+    <div class="a">NAMAN<span>MASTERY</span></div>
+    <div class="b">LANDING + SHOP</div>
+  </div>
+  <a class="down" href="#kp">Листайте вниз</a>
+</header>
+
+<section class="s lt" id="kp">
+  <div class="intro">
+    <div>
+      <p class="mut" style="margin-bottom:1.2em">Коммерческое предложение</p>
+      <h2>Naman Mastery</h2>
+      <p>Разработка лендинга парфюмерного бренда архитектурной мастерской: от прототипа и концепции до подключения оплаты, доставки и CRM.</p>
+    </div>
+    <div class="facts">
+      <div><span>Платформа</span><b>Tilda</b></div>
+      <div><span>Лендинг</span><b>8 блоков</b></div>
+      <div><span>Продукт</span><b>3 аромата</b></div>
+      <div><span>Подход</span><b>Mobile-first</b></div>
+      <div><span>Продажа</span><b>Оплата на сайте</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="s dk pos">
+  <h2>О чём бренд</h2>
+  <p class="lead">Naman Mastery принадлежит архитектурной мастерской Naman Architects. Бренд не только обустраивает пространство человека, но и становится его частью.</p>
+  <div class="grid">
+    <article>
+      <h3>Мастер и человек</h3>
+      <p>Единство творения мастера и человека.</p>
+      <p class="dz"><b>В дизайне.</b> Мастеров показываем через гифки и фотографии. Не крафт, а архитектурная алхимия.</p>
+    </article>
+    <article>
+      <h3>Гранит как ДНК</h3>
+      <p>Камушек во флаконе и сэмпле отсылает к архитектуре. Каждый уникален, как покупатель.</p>
+      <p class="dz"><b>В дизайне.</b> Гранит на сайте не в лоб: фактура, формы, ритм. Сайт и парфюм говорят одним языком.</p>
+    </article>
+    <article>
+      <h3>Аптечная подача</h3>
+      <p>Фармакологический брутализм и архитектурная алхимия.</p>
+      <p class="dz"><b>В дизайне.</b> Настроение тёмного стекла, плотной бумаги, строгих рамок и гравюр передаём ассоциативно.</p>
+    </article>
+    <article>
+      <h3>Продажи со своего сайта</h3>
+      <p>Без маркетплейсов и ГУМа. Нишевые магазины продвигают, продаёт сайт.</p>
+      <p class="dz"><b>В дизайне.</b> Сайт работает на перформанс: понятный путь до оплаты.</p>
+    </article>
+  </div>
+  <p class="rule">Каждый элемент обоснован и стоит на своём месте. Простая система UX/UI, никакого дизайна ради дизайна.</p>
+
+  <div class="flow">
+    <h3>Структура сайта</h3>
+    <ol class="blk">
+      <li>Ролик бренда на главном экране</li>
+      <li>Манифест и гифка с гранитом</li>
+      <li>Ноты ароматов через вырубку</li>
+      <li>Три аромата с заказом на сайте</li>
+      <li>Для кого ароматы</li>
+      <li>Плюсы для партнёров</li>
+      <li>Вопросы и ответы</li>
+      <li>Контакты</li>
+    </ol>
+    <ul class="feat"><li>Mobile-first</li><li>Ultra-fashion вёрстка</li><li>Простой UX</li><li>Оплата онлайн</li><li>CRM</li><li>Кнопка «написать в чат»</li></ul>
+  </div>
+</section>
+
+<section class="s lt">
+  <h2>Стоимость проекта</h2>
+  <div>
+    <div class="row"><div>Аналитика, финальное ТЗ и структура<span class="sub">Базовый анализ поведения пользователей и конкурентов</span></div><div class="pr">10 000 ₽</div></div>
+    <div class="row"><div>Прототип сайта на 8 блоков<span class="sub">Структура блоков, пользовательский сценарий и мудборд с референсами на каждый экран</span></div><div class="pr">25 000 ₽</div></div>
+    <div class="row"><div>Два варианта дизайн-концепции первых двух экранов</div><div class="pr">15 000 ₽</div></div>
+    <div class="row"><div>Лендинг из 8 блоков на Tilda<span class="sub">Главный экран, манифест, ароматы с эффектом вырубки, описания и заказ, для кого, плюсы для партнёров, вопросы и ответы, контакты</span></div><div class="pr">40 000 ₽</div></div>
+    <div class="row"><div>Настройка корзины и каталога<span class="sub">Карточки трёх ароматов с заказом. В корзине: имя, телефон, почта, данные для доставки</span></div><div class="pr">8 000 ₽</div></div>
+    <div class="row"><div>Технические страницы<span class="sub">404, политика конфиденциальности, оферта, согласие на обработку данных, страница благодарности, уведомление об использовании cookies</span></div><div class="pr">8 000 ₽</div></div>
+    <div class="row"><div>Страница о доставке, оплате и возврате</div><div class="pr">5 000 ₽</div></div>
+    <div class="row"><div>Адаптация<span class="sub">Mobile-first под мобильные устройства (390 px) и планшеты (768 px)</span></div><div class="pr">16 000 ₽</div></div>
+    <div class="row"><div>Подключение одного сервиса доставки и одного сервиса оплаты</div><div class="pr">10 000 ₽</div></div>
+    <div class="row"><div>Подключение CRM для сбора заявок с сайта<span class="sub">Рекомендуем Битрикс24</span></div><div class="pr">5 000 ₽</div></div>
+    <div class="row"><div>Базовое SEO, подключение домена и оповещения<span class="sub">Мета-теги, ЧПУ, alt-теги, OG-теги, проверка H1–H3, Google Search Console и Яндекс.Вебмастер, редирект с/без www, оповещения с форм</span></div><div class="pr">8 000 ₽</div></div>
+    <div class="row"><div>Кнопка «ничего не хочу решать, напишу в чат»<span class="sub">Чат на LiveTex: внешний вид настраивается под стиль сайта, интерфейс дружелюбный. Telegram, WhatsApp и VK в одном окне, обращения уходят в CRM</span></div><div class="pr">5 000 ₽</div></div>
+    <div class="tot"><span>Итого</span><span>155 000 ₽</span></div>
+  </div>
+  <div class="notes">
+    <p>Стоимость рассчитана на 8 блоков. Если блоков станет больше, стоимость пересчитывается.</p>
+    <p>Видеоролики, фотографии и тексты предоставляет заказчик.</p>
+  </div>
+</section>
+
+<section class="s dk">
+  <h2>Давайте начнём</h2>
+  <ol class="tl">
+    <li><div><b>Согласование КП</b>Обсуждаем состав работ и стоимость.</div><span class="d"></span></li>
+    <li><div><b>Договор и предоплата 50%</b>Подписываем договор и вносим предоплату.</div><span class="d"></span></li>
+    <li><div><b>Изучение анализа аудитории и продукта</b>Анализ аудитории уже проведён, мы изучаем его и глубже разбираем продукт.</div><span class="d"></span></li>
+    <li><div><b>Прототип и мудборд</b>Утверждаем все блоки лендинга: сейчас их 8.</div><span class="d">2–3 дня</span></li>
+    <li><div><b>Дизайн-концепция</b>Несколько вариантов, затем утверждение.</div><span class="d">3 дня</span></li>
+    <li><div><b>Разработка сайта на Tilda</b>Собираем все 8 блоков и страницы.</div><span class="d">7–10 рабочих дней</span></li>
+    <li><div><b>Подключение технической части</b>Оплата, доставка, CRM, домен, SEO, оповещения.</div><span class="d">5 дней</span></li>
+  </ol>
+  <p class="sum">Всего около 17–21 рабочего дня от старта прототипа, без учёта времени на согласования с вашей стороны.</p>
+  <p class="contact">hello@art-maksimenko.ru · art-maksimenko.ru</p>
+</section>
+
+<script>
+(function(){try{var v=document.querySelector('.hv');if(!v)return;var t=document.createElement('video');t.muted=true;t.preload='metadata';t.onloadedmetadata=function(){v.src='hero.mp4';var p=v.play();if(p&&p.catch)p.catch(function(){})};t.src='hero.mp4'}catch(e){}})();
+</script>
+</body>
+</html>
